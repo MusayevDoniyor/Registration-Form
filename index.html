@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./registration.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-heading">
+          <span class="r">R</span>
+          <span class="egistration">EGISTRATION</span>
+        </div>
+
+        <div class="input-container">
+          <!-- First Name -->
+          <div class="input-wrapper">
+            <fieldset>
+              <legend><label for="firstname">First Name</label></legend>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                autocomplete="name"
+              />
+            </fieldset>
+          </div>
+
+          <!-- Last Name -->
+          <div class="input-wrapper">
+            <fieldset>
+              <legend><label for="lastname">Last Name</label></legend>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                autocomplete="family-name"
+              />
+            </fieldset>
+          </div>
+
+          <!-- User Name -->
+          <div class="input-wrapper">
+            <fieldset>
+              <legend><label for="username">User Name</label></legend>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                autocomplete="username"
+              />
+            </fieldset>
+          </div>
+
+          <!-- Email -->
+          <div class="input-wrapper">
+            <fieldset>
+              <legend><label for="email">Email</label></legend>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+              />
+            </fieldset>
+          </div>
+
+          <!-- Password -->
+          <div class="input-wrapper">
+            <fieldset>
+              <legend><label for="password">Password</label></legend>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="current-password"
+              />
+            </fieldset>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="input-wrapper">
+            <fieldset>
+              <legend>
+                <label for="passwordConfirm">Confirm Password</label>
+              </legend>
+              <input
+                type="password"
+                name="passwordConfirm"
+                id="passwordConfirm"
+              />
+            </fieldset>
+          </div>
+        </div>
+
+        <!-- Gender Selection -->
+        <div class="selectGender">
+          <h3>Select Your Gender</h3>
+
+          <div class="genderInputsContainer">
+            <div>
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+            </div>
+
+            <div>
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
+            </div>
+
+            <div>
+              <input type="radio" name="gender" id="unknown" />
+              <label for="unknown">Unknown</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submitButton">
+          <button type="submit">REGISTER NOW</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

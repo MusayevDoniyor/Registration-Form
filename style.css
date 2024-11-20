@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  border: 0;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+body {
+  background-color: blue;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.container {
+  background: white;
+  padding: 2.5rem 1.5rem;
+  border-radius: 10px;
+  max-width: 60%;
+  min-width: 50%;
+  height: 80vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.r {
+  font-size: 2.75rem;
+  font-weight: bolder;
+}
+
+.egistration {
+  border-top: 3px solid blue;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border-radius: 3px;
+  border: none;
+  box-shadow: 1px 1px 4px gray;
+  padding: 10px;
+}
+
+legend {
+  padding-left: 5px;
+}
+
+.selectGender {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.genderInputsContainer {
+  display: flex;
+  gap: 25px;
+}
+
+.genderInputsContainer div {
+  display: flex;
+  gap: 10px;
+}
+
+.submitButton button {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.submitButton button:hover {
+  background-color: darkblue;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .input-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .submitButton button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .r {
+    font-size: 2.25rem;
+  }
+
+  .egistration {
+    font-size: 1rem;
+  }
+}
